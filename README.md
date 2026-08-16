@@ -82,9 +82,6 @@ Then remove the comment markers around the image below.
   <img src="assets/screenshot.png" alt="Restore Maps Tab screenshot" width="850">
 </div>
 -->
-
-> A screenshot of the extension in action will be added here.
-
 ---
 
 ## ⚙️ How It Works
@@ -119,7 +116,7 @@ The extension does **not** send your search query to the developer or to any dev
 
 ### Chrome Web Store
 
-Chrome Web Store installation will be available after the first public release.
+**[🚀 Install from Chrome Web Store](https://chromewebstore.google.com/detail/restore-maps-tab/banacppfkldjdkbfnbgpcbbbppidnjoj)**
 
 <!--
 After publishing, replace the text above with:
