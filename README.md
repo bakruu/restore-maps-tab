@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="icons/icon128.png" alt="Restore Maps Tab icon" width="128" height="128">
+<img src="/assets/icons/icon128.png" alt="Restore Maps Tab icon" width="128" height="128">
 
 # Restore Maps Tab
 
@@ -33,6 +33,10 @@ Restore Maps Tab brings that shortcut back.
 Search for a place, restaurant, landmark, business, address, or anything else and click **Maps** to immediately continue the same search in Google Maps.
 
 No copying. No opening Maps manually. No searching twice.
+
+<div align="center">
+
+<img src="/assets/maps_return.png" alt="Restore Maps Tab icon" width="128" height="128">
 
 ---
 
