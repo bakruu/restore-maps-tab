@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="/assets/icons/icon128.png" alt="Restore Maps Tab for google search">
+<img src="/assets/icons/icon128.png" alt="Restore Maps Tab icon" width="128" height="128">
 
 # Restore Maps Tab
 
@@ -36,7 +36,7 @@ No copying. No opening Maps manually. No searching twice.
 
 <div align="center">
 
-<img src="/assets/maps_return.png" alt="Restore Maps Tab icon" width="128" height="128">
+<img src="/assets/maps_return.png" alt="Restore Maps Tab for Google Search">
 
 ---
 
