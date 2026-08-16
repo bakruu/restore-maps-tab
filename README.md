@@ -1,129 +1,314 @@
+<div align="center">
+
+<img src="icons/icon128.png" alt="Restore Maps Tab icon" width="128" height="128">
+
 # Restore Maps Tab
 
-Bring the **Maps** shortcut back to Google Search.
+### Bring the Maps shortcut back to Google Search.
 
-Restore Maps Tab is a lightweight browser extension that restores the missing Maps tab in Google Search results. Clicking the restored tab opens your current search query directly in Google Maps.
+A lightweight, privacy-friendly browser extension that restores the missing **Maps** tab in Google Search results.
 
-## Features
+<br>
 
-* Restores the **Maps** tab in Google Search
-* Automatically uses your current search query
-* Matches Google's existing navigation style
-* Supports Google Search's dynamic page navigation
-* Works with light and dark themes
-* Supports English and Turkish interfaces
-* No account required
-* No analytics
-* No tracking
-* No data collection
-* No unnecessary browser permissions
+![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Chrome](https://img.shields.io/badge/Chrome-Compatible-brightgreen)
+![Edge](https://img.shields.io/badge/Edge-Compatible-blue)
+![Privacy](https://img.shields.io/badge/Tracking-None-success)
 
-## How It Works
+<br>
 
-The extension runs locally on supported Google Search pages.
+**[Installation](#installation) • [How It Works](#how-it-works) • [Privacy](#privacy) • [Contributing](#contributing)**
 
-It detects the search navigation bar, creates a Maps shortcut next to the existing navigation tabs, and links it to Google Maps using your current search query.
+</div>
+
+---
+
+## 🗺️ What is Restore Maps Tab?
+
+Google Search used to provide a convenient **Maps** shortcut alongside tabs such as Images, Videos, Shopping, and News.
+
+Restore Maps Tab brings that shortcut back.
+
+Search for a place, restaurant, landmark, business, address, or anything else and click **Maps** to immediately continue the same search in Google Maps.
+
+No copying. No opening Maps manually. No searching twice.
+
+---
+
+## ✨ Features
+
+* 🗺️ Restores the **Maps** shortcut in Google Search
+* 🔎 Automatically uses your current search query
+* 🎨 Matches Google's existing navigation style
+* 🌓 Works with light and dark themes
+* ⚡ Handles Google's dynamic page navigation
+* 🇬🇧 English interface support
+* 🇹🇷 Turkish interface support
+* 🪶 Extremely lightweight
+* 🔒 No analytics
+* 🚫 No tracking
+* 💾 No user data storage
+* 🔑 No unnecessary browser permissions
+
+---
+
+## 📸 Preview
+
+<!--
+Add a screenshot to:
+assets/screenshot.png
+
+Then remove the comment markers around the image below.
+-->
+
+<!--
+<div align="center">
+  <img src="assets/screenshot.png" alt="Restore Maps Tab screenshot" width="850">
+</div>
+-->
+
+> A screenshot of the extension in action will be added here.
+
+---
+
+## ⚙️ How It Works
+
+Restore Maps Tab runs locally on supported Google Search pages.
+
+It detects Google's search navigation bar and inserts a **Maps** shortcut alongside the existing navigation options.
+
+When clicked, the current search query is passed directly to Google Maps.
 
 For example:
 
 ```text
-Google Search:
+Google Search
 coffee shops in Istanbul
 
-↓ Click "Maps"
+        ↓
 
-Google Maps:
+Click "Maps"
+
+        ↓
+
+Google Maps
 coffee shops in Istanbul
 ```
 
-The extension does not send your search queries or browsing activity to any external server.
+The extension does **not** send your search query to the developer or to any developer-operated server.
 
-## Installation
+---
+
+## 🚀 Installation
 
 ### Chrome Web Store
 
-Once the extension is published, it can be installed directly from the Chrome Web Store.
+Chrome Web Store installation will be available after the first public release.
+
+<!--
+After publishing, replace the text above with:
+
+[![Available in the Chrome Web Store](YOUR_BADGE_OR_IMAGE)](YOUR_STORE_URL)
+-->
 
 ### Manual Installation
 
+You can install the extension manually from this repository:
+
 1. Download or clone this repository.
-2. Open:
+2. Open Chrome or another compatible Chromium browser.
+3. Navigate to:
 
 ```text
 chrome://extensions
 ```
 
-3. Enable **Developer mode**.
-4. Click **Load unpacked**.
-5. Select the extension folder.
+4. Enable **Developer mode**.
+5. Click **Load unpacked**.
+6. Select the extension directory.
+7. Open Google Search and perform a search.
 
-The Maps tab should now appear in supported Google Search results.
+The **Maps** shortcut should now appear in the search navigation.
 
-## Project Structure
+---
+
+## 📁 Project Structure
 
 ```text
 restore-maps-tab/
+│
+├── assets/
+│   ├── icon128.png
+│   └── screenshot.png
+│
 ├── icons/
 │   ├── icon16.png
 │   ├── icon32.png
 │   ├── icon48.png
 │   └── icon128.png
+│
 ├── content.css
 ├── content.js
 ├── manifest.json
+│
 ├── .gitignore
 ├── LICENSE
 ├── PRIVACY.md
 └── README.md
 ```
 
-## Privacy
+`icons/` contains the production icons packaged with the extension.
 
-Restore Maps Tab does not collect, store, transmit, or sell personal data.
+`assets/` contains images used by this README and other project documentation.
 
-The extension does not use analytics, tracking systems, cookies, remote servers, or advertising services.
+---
 
-See [PRIVACY.md](PRIVACY.md) for more information.
+## 🔐 Privacy
 
-## Permissions
+Restore Maps Tab is designed to be as simple and privacy-friendly as possible.
 
-Restore Maps Tab does not request additional browser permissions.
+The extension does **not**:
 
-Its content script only runs on the Google Search domains declared in the extension manifest.
+* Collect personal information
+* Collect browsing history
+* Store search queries
+* Use analytics
+* Use telemetry
+* Track users
+* Display advertisements
+* Communicate with developer-operated servers
 
-## Supported Browsers
+The current Google Search query is read locally only to construct the destination Google Maps URL when the Maps shortcut is used.
 
-The extension is designed for Chromium-based browsers supporting Manifest V3, including:
+For complete details, see [PRIVACY.md](PRIVACY.md).
 
-* Google Chrome
-* Microsoft Edge
-* Brave
-* Other compatible Chromium browsers
+---
 
-## Contributing
+## 🔑 Permissions
 
-Contributions, bug reports, and suggestions are welcome.
+Restore Maps Tab does not request additional Chrome extension permissions.
 
-If Google changes the structure of its Search interface and the Maps tab stops appearing correctly, please open an issue with:
+The content script only operates on the Google Search pages explicitly declared in `manifest.json`.
 
-* Browser name and version
+---
+
+## 🌐 Current Compatibility
+
+| Platform                | Status                         |
+| ----------------------- | ------------------------------ |
+| Google Chrome           | ✅ Supported                    |
+| Microsoft Edge          | ✅ Supported                    |
+| Brave                   | ✅ Expected to work             |
+| Other Chromium browsers | ✅ Expected to work             |
+| Firefox                 | ⏳ Not officially supported yet |
+| Safari                  | ⏳ Not supported yet            |
+
+### Google Search
+
+Currently tested with:
+
+* `google.com`
+* `google.com.tr`
+* English interface
+* Turkish interface
+
+Support for additional Google domains and languages may be added in future releases.
+
+---
+
+## 🛠️ Development
+
+Restore Maps Tab uses:
+
+* JavaScript
+* CSS
+* Chrome Extensions Manifest V3
+
+There is no build system, framework, package manager, or external dependency.
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/restore-maps-tab.git
+```
+
+Then load the project directory using **Load unpacked** from `chrome://extensions`.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+If Google changes the structure of its Search interface and the Maps shortcut stops appearing correctly, please open an issue.
+
+Useful information to include:
+
+* Browser and version
 * Google Search language
-* Country/domain used
-* Screenshot of the navigation bar
-* Short description of the problem
+* Google domain
+* Description of the issue
+* Screenshot, if appropriate
 
-Please avoid including private or sensitive information in screenshots or issue reports.
+Please remove private or sensitive information from screenshots before uploading them.
 
-## License
+Pull requests for fixes, compatibility improvements, and additional language support are also welcome.
 
-This project is licensed under the MIT License.
+---
 
-See [LICENSE](LICENSE) for details.
+## 🐛 Found a Bug?
 
-## Disclaimer
+Open a GitHub Issue and describe what happened.
+
+If possible, mention whether the problem involves:
+
+* The Maps tab not appearing
+* Incorrect tab positioning
+* Incorrect language
+* Google changing the navigation layout
+* A specific Chromium browser
+
+---
+
+## 🗺️ Roadmap
+
+Possible future improvements:
+
+* Additional Google domains
+* Additional interface languages
+* Improved resilience to Google UI changes
+* Firefox support
+* Automated compatibility testing
+
+The goal is to keep the extension focused and lightweight rather than turn it into a large feature suite.
+
+---
+
+## 📄 License
+
+Distributed under the **MIT License**.
+
+See [LICENSE](LICENSE) for more information.
+
+---
+
+## ⚠️ Disclaimer
 
 Restore Maps Tab is an independent third-party browser extension.
 
 It is not affiliated with, endorsed by, sponsored by, or officially associated with Google LLC.
 
 Google, Google Search, and Google Maps are trademarks of Google LLC.
+
+---
+
+<div align="center">
+
+### Restore the shortcut. Keep searching.
+
+Made for people who miss the Maps tab.
+
+⭐ If you find the project useful, consider starring the repository.
+
+</div>
