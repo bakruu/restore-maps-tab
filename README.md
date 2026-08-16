@@ -15,6 +15,17 @@ A lightweight, privacy-friendly browser extension that restores the missing **Ma
 ![Chrome](https://img.shields.io/badge/Chrome-Compatible-brightgreen)
 ![Edge](https://img.shields.io/badge/Edge-Compatible-blue)
 ![Privacy](https://img.shields.io/badge/Tracking-None-success)
+<br>
+
+<a href="https://chromewebstore.google.com/detail/restore-maps-tab/banacppfkldjdkbfnbgpcbbbppidnjoj">
+  <img src="https://img.shields.io/badge/Chrome%20Web%20Store-Install-4285F4?logo=googlechrome&logoColor=white" alt="Install from Chrome Web Store">
+</a>
+
+<br><br>
+
+**[🚀 Install from Chrome Web Store](https://chromewebstore.google.com/detail/restore-maps-tab/banacppfkldjdkbfnbgpcbbbppidnjoj)**
+
+<br>
 
 <br>
 
