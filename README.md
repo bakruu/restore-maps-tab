@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="/assets/icons/icon128.png" alt="Restore Maps Tab icon" width="128" height="128">
+<img src="/assets/icons/icon128.png" alt="Restore Maps Tab for google search">
 
 # Restore Maps Tab
 
